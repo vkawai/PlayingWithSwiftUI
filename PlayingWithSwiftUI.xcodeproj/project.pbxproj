@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C465684329073BFC004A3958 /* SimpleLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C465684229073BFC004A3958 /* SimpleLoading.swift */; };
 		C487DAB629058459000173BD /* PlayingWithSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487DAB529058459000173BD /* PlayingWithSwiftUIApp.swift */; };
 		C487DAB829058459000173BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C487DAB729058459000173BD /* ContentView.swift */; };
 		C487DABA2905845A000173BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C487DAB92905845A000173BD /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C465684229073BFC004A3958 /* SimpleLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoading.swift; sourceTree = "<group>"; };
 		C487DAB229058459000173BD /* PlayingWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C487DAB529058459000173BD /* PlayingWithSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithSwiftUIApp.swift; sourceTree = "<group>"; };
 		C487DAB729058459000173BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C465684129073BED004A3958 /* SimpleLoading */ = {
+			isa = PBXGroup;
+			children = (
+				C465684229073BFC004A3958 /* SimpleLoading.swift */,
+			);
+			path = SimpleLoading;
+			sourceTree = "<group>";
+		};
 		C487DAA929058459000173BD = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 		C487DAB429058459000173BD /* PlayingWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C465684129073BED004A3958 /* SimpleLoading */,
 				C4E6844429059F4500B2FD46 /* Menu */,
 				C4CA7E952905847D00000871 /* Clock */,
 				C487DAB529058459000173BD /* PlayingWithSwiftUIApp.swift */,
@@ -190,6 +201,7 @@
 				C487DAB629058459000173BD /* PlayingWithSwiftUIApp.swift in Sources */,
 				C4E6844829059F5D00B2FD46 /* MenuController.swift in Sources */,
 				C4E6844629059F4E00B2FD46 /* Menu.swift in Sources */,
+				C465684329073BFC004A3958 /* SimpleLoading.swift in Sources */,
 				C4E6844C2905F28300B2FD46 /* AnalogClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

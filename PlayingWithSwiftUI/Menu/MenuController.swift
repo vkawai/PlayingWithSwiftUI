@@ -6,11 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct MenuViewModel {
     
+    enum ItemIdentifier {
+        case digitalClock
+        case analogClock
+        case simpleLoading
+    }
+    
     struct ItemViewModel: Identifiable {
-        var id: Int
+        var id: ItemIdentifier
         var entryName: String
     }
     
@@ -18,8 +25,22 @@ struct MenuViewModel {
 }
 
 final class MenuController: ObservableObject {
+    
     @Published var viewModel: MenuViewModel = .init(items: [
-        .init(id: 0, entryName: "Digital Clock"),
-        .init(id: 1, entryName: "Analog Clock")
+        .init(id: .digitalClock, entryName: "Digital Clock"),
+        .init(id: .analogClock, entryName: "Analog Clock"),
+        .init(id: .simpleLoading, entryName: "Simple Loading")
     ])
+    
+    @ViewBuilder
+    func view(for id: MenuViewModel.ItemIdentifier) -> some View {
+        switch id {
+        case .digitalClock:
+            DigitalClock(controller: .init())
+        case .analogClock:
+            AnalogClock(controller: .init())
+        case .simpleLoading:
+            SimpleLoading()
+        }
+    }
 }

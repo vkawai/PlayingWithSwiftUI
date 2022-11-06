@@ -23,14 +23,7 @@ struct Menu: View {
     var body: some View {
         List(controller.viewModel.items, id: \.id) { item in
             NavigationLink(item.entryName) {
-                switch item.id {
-                case 0:
-                    DigitalClock(controller: .init())
-                case 1:
-                    AnalogClock(controller: .init())
-                default:
-                    ContentView()
-                }
+                AnyView(controller.view(for: item.id))
             }
             
         }.navigationTitle("Menu")
